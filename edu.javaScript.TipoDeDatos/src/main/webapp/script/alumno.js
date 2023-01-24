@@ -1,12 +1,17 @@
-function Clase()
-{
-	function Alumno(nombre, apellidos, edad) 
-	{
-  		this.nombre=nombre;
-  		this.apellidos=apellidos;
-  		this.edad=edad;
-	}
-	var Alumnos = new Alumno('Aaron Senen', 'Muñoz Prada', 21);
+function Objeto() 
+	{			
+			 function alumno(nombre, apellido, edad) 
+			 {
+	          		this.nombre=nombre;
+	        		this.apellido=apellido;
+	        		this.edad=edad;
+	    	 }
+	    var Alumnos = new alumno(" Aaron Senen", " Munoz Prada", " "+21);
 	
-	document.writeline(Alumnos);
-}
+	    document.write(Alumnos instanceof Object);
+	    document.write(Alumnos);
+	    document.write(Alumnos.nombre);
+		document.write(Alumnos.apellido);
+		document.write(Alumnos.edad);
+	}
+	
